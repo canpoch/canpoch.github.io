@@ -11,88 +11,88 @@
         .amenities-section {
             margin-top: 3rem;
         }
-        
+
         /* Vertical spacing above each room title */
         .amenity-category h4 {
             margin-top: 2rem;
             margin-bottom: 1rem;
         }
-        
+
         /* First category doesn't need top margin */
         .amenity-category:first-child h4 {
             margin-top: 1rem;
         }
-        
+
         /* 2-column layout for amenities */
         .amenities-grid {
             display: flex;
             flex-wrap: wrap;
             gap: 2rem;
         }
-        
+
         .amenity-category {
             flex: 1;
             min-width: 300px;
         }
-        
+
         .amenity-category ul {
             list-style: none;
             padding-left: 0;
         }
-        
+
         .amenity-category li {
             padding: 0.25rem 0;
             border-bottom: 1px solid #f0f0f0;
         }
-        
+
         .amenity-category li:before {
             content: "• ";
             color: #2c3e50;
             font-weight: bold;
             margin-right: 0.5rem;
         }
-        
+
         /* Mobile responsive - single column */
         @media (max-width: 768px) {
             .amenities-grid {
                 flex-direction: column;
             }
-            
+
             .amenity-category {
                 min-width: 100%;
             }
-            
+
             .amenities-section {
                 margin-top: 2rem;
             }
-            
+
             .amenity-category h4 {
                 margin-top: 1.5rem;
             }
         }
-        
+
         /* Spacing between language selector and navigation */
         .language-selector {
             margin-bottom: 1.5rem;
         }
-        
+
         /* Extra spacing for the reserve button */
         .btn-reserve {
             margin-left: 2rem;
         }
-        
+
         /* Mobile adjustments for navigation spacing */
         @media (max-width: 768px) {
             .language-selector {
                 margin-bottom: 1rem;
             }
-            
+
             .btn-reserve {
                 margin-left: 0;
                 margin-top: 1rem;
             }
         }
-        
+
         /* Gallery Styles */
         .gallery-grid {
             display: grid;
@@ -100,17 +100,17 @@
             gap: 2rem;
             margin-top: 3rem;
         }
-        
+
         .gallery-category {
             cursor: pointer;
             transition: transform 0.3s ease;
             text-align: center;
         }
-        
+
         .gallery-category:hover {
             transform: translateY(-5px);
         }
-        
+
         .gallery-portrait {
             width: 100%;
             height: 400px;
@@ -119,23 +119,23 @@
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
             transition: box-shadow 0.3s ease;
         }
-        
+
         .gallery-category:hover .gallery-portrait {
             box-shadow: 0 10px 30px rgba(0,0,0,0.2);
         }
-        
+
         .gallery-category h3 {
             margin-top: 1rem;
             color: #2c3e50;
             font-family: 'Playfair Display', serif;
         }
-        
+
         .gallery-count {
             color: #666;
             font-size: 0.9rem;
             margin-top: 0.5rem;
         }
-        
+
         /* Photo Modal Styles */
         .photo-modal {
             display: none;
@@ -148,11 +148,11 @@
             background-color: rgba(0,0,0,0.95);
             overflow: auto;
         }
-        
+
         .photo-modal.active {
             display: block;
         }
-        
+
         .modal-content {
             position: relative;
             margin: 2% auto;
@@ -160,7 +160,7 @@
             max-width: 90%;
             max-height: 90vh;
         }
-        
+
         .close-modal {
             position: absolute;
             top: 15px;
@@ -171,29 +171,29 @@
             cursor: pointer;
             transition: color 0.3s;
         }
-        
+
         .close-modal:hover {
             color: #bbb;
         }
-        
+
         .modal-header {
             display: flex;
             justify-content: space-between;
             align-items: center;
             margin-bottom: 20px;
         }
-        
+
         .modal-header h3 {
             color: white;
             font-family: 'Playfair Display', serif;
         }
-        
+
         .modal-controls {
             display: flex;
             align-items: center;
             gap: 20px;
         }
-        
+
         .modal-prev, .modal-next {
             background: none;
             border: 2px solid white;
@@ -204,16 +204,16 @@
             border-radius: 5px;
             transition: all 0.3s;
         }
-        
+
         .modal-prev:hover, .modal-next:hover {
             background: white;
             color: black;
         }
-        
+
         .photo-counter {
             color: white;
         }
-        
+
         #modalImage {
             display: block;
             max-width: 100%;
@@ -221,7 +221,7 @@
             margin: 0 auto;
             object-fit: contain;
         }
-        
+
         .thumbnails-container {
             display: flex;
             gap: 10px;
@@ -230,7 +230,7 @@
             justify-content: center;
             flex-wrap: wrap;
         }
-        
+
         .thumbnail {
             width: 80px;
             height: 80px;
@@ -240,33 +240,33 @@
             opacity: 0.6;
             transition: all 0.3s;
         }
-        
+
         .thumbnail:hover, .thumbnail.active {
             opacity: 1;
             border-color: white;
         }
-        
+
         @media (max-width: 768px) {
             .gallery-portrait {
                 height: 300px;
             }
-            
+
             .modal-content {
                 padding: 10px;
                 max-width: 95%;
             }
-            
+
             .modal-header {
                 flex-direction: column;
                 gap: 10px;
             }
-            
+
             .thumbnail {
                 width: 60px;
                 height: 60px;
             }
         }
-        
+
         /* Video Player Styles */
         .video-wrapper {
             position: relative;
@@ -277,7 +277,7 @@
             box-shadow: 0 5px 20px rgba(0,0,0,0.1);
             aspect-ratio: 16 / 9;
         }
-        
+
         .video-wrapper video {
             width: 100%;
             height: 100%;
@@ -285,7 +285,7 @@
             cursor: pointer;
             object-fit: contain;
         }
-        
+
         /* Video Controls */
         .video-controls {
             position: absolute;
@@ -297,7 +297,7 @@
             opacity: 1;
             transition: opacity 0.3s ease;
         }
-        
+
         /* Progress Bar */
         .progress-bar-container {
             width: 100%;
@@ -307,19 +307,19 @@
             margin-bottom: 10px;
             position: relative;
         }
-        
+
         .progress-bar {
             position: relative;
             height: 100%;
         }
-        
+
         .progress-filled {
             height: 100%;
             background: #e74c3c;
             width: 0;
             transition: width 0.1s;
         }
-        
+
         .progress-handle {
             position: absolute;
             width: 12px;
@@ -330,14 +330,14 @@
             transform: translate(-50%, -50%);
             left: 0;
         }
-        
+
         /* Controls Row */
         .controls-row {
             display: flex;
             align-items: center;
             gap: 15px;
         }
-        
+
         .control-btn {
             background: none;
             border: none;
@@ -349,23 +349,23 @@
             align-items: center;
             justify-content: center;
         }
-        
+
         .control-btn:hover {
             opacity: 0.7;
         }
-        
+
         .control-btn svg {
             width: 24px;
             height: 24px;
         }
-        
+
         /* Volume Control */
         .volume-container {
             display: flex;
             align-items: center;
             position: relative;
         }
-        
+
         .volume-slider-container {
             position: absolute;
             left: 100%;
@@ -376,11 +376,11 @@
             transition: width 0.3s ease;
             margin-left: 10px;
         }
-        
+
         .volume-container:hover .volume-slider-container {
             width: 80px;
         }
-        
+
         .volume-slider {
             width: 80px;
             height: 4px;
@@ -390,7 +390,7 @@
             outline: none;
             cursor: pointer;
         }
-        
+
         .volume-slider::-webkit-slider-thumb {
             -webkit-appearance: none;
             appearance: none;
@@ -400,7 +400,7 @@
             border-radius: 50%;
             cursor: pointer;
         }
-        
+
         .volume-slider::-moz-range-thumb {
             width: 12px;
             height: 12px;
@@ -409,7 +409,7 @@
             cursor: pointer;
             border: none;
         }
-        
+
         /* Time Display */
         .time-display {
             color: white;
@@ -417,16 +417,16 @@
             font-family: Arial, sans-serif;
             white-space: nowrap;
         }
-        
+
         .spacer {
             flex-grow: 1;
         }
-        
+
         /* Quality Selector */
         .quality-container {
             position: relative;
         }
-        
+
         .quality-menu {
             position: absolute;
             bottom: 100%;
@@ -438,47 +438,47 @@
             min-width: 80px;
             display: none;
         }
-        
+
         .quality-container.active .quality-menu {
             display: block;
         }
-        
+
         .quality-option {
             padding: 8px 15px;
             color: white;
             cursor: pointer;
             transition: background 0.2s;
         }
-        
+
         .quality-option:hover {
             background: rgba(255,255,255,0.2);
         }
-        
+
         .quality-option.active {
             color: #e74c3c;
         }
-        
+
         /* Fullscreen styles */
         .video-wrapper:fullscreen {
             border-radius: 0;
         }
-        
+
         .video-wrapper:fullscreen video {
             width: 100%;
             height: 100%;
             object-fit: contain;
         }
-        
+
         /* Responsive */
         @media (max-width: 768px) {
             .controls-row {
                 gap: 10px;
             }
-            
+
             .time-display {
                 font-size: 12px;
             }
-            
+
             .control-btn svg {
                 width: 20px;
                 height: 20px;
@@ -559,7 +559,7 @@
                 <h2 data-ca="La masia" data-en="The Farmhouse">La masia</h2>
                 <p class="section-subtitle" data-ca="Una casa al bosc" data-en="A house in the forest">Una casa al bosc</p>
             </div>
-            
+
             <div class="content-grid">
                 <div class="content-text">
                     <p data-ca="Can Poch és una masia del 1700 envoltada de boscos i camps d'ametllers, situada al cor de la serralada litoral, entre el Vallès i el Maresme." data-en="Can Poch is an 18th-century farmhouse surrounded by forests and almond fields, located in the heart of the coastal mountain range, between Vallès and Maresme.">
@@ -571,7 +571,7 @@
                     <p data-ca="Ideal per desconnectar, respirar i gaudir." data-en="Ideal for disconnecting, breathing and enjoying.">
                         Ideal per desconnectar, respirar i gaudir.
                     </p>
-                    
+
                     <h3 data-ca="L'espai" data-en="The space">L'espai</h3>
                     <p data-ca="Amb capacitat per a 9 persones, la casa compta amb tres habitacions grans, dos banys complets, xemeneia, wifi i una cuina totalment equipada. A l'exterior hi trobaràs una terrassa de 50 m², jardí amb taula i cadires d'exterior, una piscina gran (que prové de la rehabilitació de l'antiga bassa de la finca) i una taula per fer àpats sota els arbres." data-en="With capacity for 9 people, the house has three large bedrooms, two full bathrooms, fireplace, wifi and a fully equipped kitchen. Outside you will find a 50 m² terrace, garden with outdoor table and chairs, a large swimming pool (which comes from the rehabilitation of the old farm pond) and a table for dining under the trees.">
                         Amb capacitat per a 9 persones, la casa compta amb tres habitacions grans, dos banys complets, xemeneia, wifi i una cuina totalment equipada. A l'exterior hi trobaràs una terrassa de 50 m², jardí amb taula i cadires d'exterior, una piscina gran (que prové de la rehabilitació de l'antiga bassa de la finca) i una taula per fer àpats sota els arbres.
@@ -583,7 +583,7 @@
                             <source src="videos/CanPoch_hd.mp4" type="video/mp4" id="videoSource">
                             <p data-ca="El teu navegador no suporta vídeos HTML5." data-en="Your browser doesn't support HTML5 video.">El teu navegador no suporta vídeos HTML5.</p>
                         </video>
-                        
+
                         <div class="video-controls">
                             <div class="progress-bar-container">
                                 <div class="progress-bar">
@@ -591,7 +591,7 @@
                                     <div class="progress-handle"></div>
                                 </div>
                             </div>
-                            
+
                             <div class="controls-row">
                                 <!-- Play/Pause -->
                                 <button class="control-btn play-pause-btn" id="playPauseBtn">
@@ -602,7 +602,7 @@
                                         <path d="M6 19h4V5H6v14zm8-14v14h4V5h-4z" fill="currentColor"/>
                                     </svg>
                                 </button>
-                                
+
                                 <!-- Volume -->
                                 <div class="volume-container">
                                     <button class="control-btn volume-btn" id="volumeBtn">
@@ -617,14 +617,14 @@
                                         <input type="range" class="volume-slider" id="volumeSlider" min="0" max="100" value="100">
                                     </div>
                                 </div>
-                                
+
                                 <!-- Time display -->
                                 <div class="time-display">
                                     <span id="currentTime">0:00</span> / <span id="duration">0:00</span>
                                 </div>
-                                
+
                                 <div class="spacer"></div>
-                                
+
                                 <!-- Quality -->
                                 <div class="quality-container">
                                     <button class="control-btn quality-btn" id="qualityBtn">
@@ -637,7 +637,7 @@
                                         <div class="quality-option" data-quality="sd">SD</div>
                                     </div>
                                 </div>
-                                
+
                                 <!-- Fullscreen -->
                                 <button class="control-btn fullscreen-btn" id="fullscreenBtn">
                                     <svg class="maximize-icon" viewBox="0 0 24 24" width="24" height="24">
@@ -663,7 +663,7 @@
                         <span class="detail-number">2</span>
                         <span class="detail-label" data-ca="Banys" data-en="Bathrooms">Banys</span>
                     </div>
-                    
+
                     <div class="detail-item">
                         <span class="detail-number">9</span>
                         <span class="detail-label" data-ca="Persones" data-en="Guests">Persones</span>
@@ -677,7 +677,7 @@
 
             <div class="amenities-section">
                 <h3 data-ca="Instal·lacions:" data-en="Facilities:">Instal·lacions:</h3>
-                
+
                 <div class="amenities-grid">
                     <div class="amenity-category">
                         <h4 data-ca="Cuina i menjador:" data-en="Kitchen and dining:">Cuina i menjador:</h4>
@@ -760,20 +760,20 @@
                 <h2 data-ca="Fotos" data-en="Photos">Fotos</h2>
                 <p class="section-subtitle" data-ca="Descobreix Can Poch" data-en="Discover Can Poch">Descobreix Can Poch</p>
             </div>
-            
+
             <div class="gallery-grid">
                 <div class="gallery-category" data-category="casa_teva_al_bosc">
                     <img src="photos/casa_teva_al_bosc/CanPoch_FotosMontseCapdevila_low-08187.jpg" alt="Casa teva al Bosc" class="gallery-portrait">
                     <h3>Casa teva al Bosc</h3>
                     <p class="gallery-count" data-ca="21 fotos" data-en="21 photos">21 fotos</p>
                 </div>
-                
+
                 <div class="gallery-category" data-category="exterior">
                     <img src="photos/exterior/CanPoch_FotosMontseCapdevila_low-07392.jpg" alt="Exterior" class="gallery-portrait">
                     <h3>Exterior</h3>
                     <p class="gallery-count" data-ca="25 fotos" data-en="25 photos">25 fotos</p>
                 </div>
-                
+
                 <div class="gallery-category" data-category="interior">
                     <img src="photos/interior/CanPoch_FotosMontseCapdevila_low-07934.jpg" alt="Interior" class="gallery-portrait">
                     <h3>Interior</h3>
@@ -809,14 +809,14 @@
                 <h2 data-ca="L'entorn" data-en="The Environment">L'entorn</h2>
                 <p class="section-subtitle" data-ca="La Roca del Vallès, Catalunya" data-en="La Roca del Vallès, Catalunya">La Roca del Vallès, Catalunya</p>
             </div>
-            
+
             <div class="environment-content">
                 <div class="env-text">
                     <p data-ca="La casa és un habitatge aïllat que pertany al terme municipal de la Roca del Vallès, al Vallès Oriental." data-en="The house is an isolated dwelling that belongs to the municipality of la Roca del Vallès, in Vallès Oriental.">
                         La casa és un habitatge aïllat que pertany al terme municipal de la Roca del Vallès, al Vallès Oriental.
                     </p>
                 </div>
-                
+
                 <div class="location-sections">
                     <div class="location-section">
                         <h3 data-ca="Natura i activitats a l'aire lliure:" data-en="Nature and outdoor activities:">Natura i activitats a l'aire lliure:</h3>
@@ -875,7 +875,7 @@
                 <h2 data-ca="Contacte" data-en="Contact">Contacte</h2>
                 <p class="section-subtitle" data-ca="Vine a descobrir Can Poch" data-en="Come discover Can Poch">Vine a descobrir Can Poch</p>
             </div>
-            
+
             <div class="contact-grid">
                 <div class="contact-info">
                     <div class="contact-item">
@@ -883,7 +883,7 @@
                         <p>hola@canpoch.cat</p>
                     </div>
                 </div>
-                
+
                 <form class="contact-form" action="https://formspree.io/f/mzzgoayb" method="POST">
                     <div class="form-group">
                         <label for="name" data-ca="Nom" data-en="Name">Nom</label>
@@ -897,13 +897,13 @@
                         <label for="message" data-ca="Missatge" data-en="Message">Missatge</label>
                         <textarea id="message" name="message" rows="4" data-ca="Explica'ns una mica sobre la teva estada ideal..." data-en="Tell us about your ideal stay..." placeholder="Explica'ns una mica sobre la teva estada ideal..." required></textarea>
                     </div>
-                    
+
                     <!-- Hidden field to specify recipient email -->
                     <input type="hidden" name="_to" value="hola@canpoch.cat">
                     <input type="hidden" name="_subject" value="Nova consulta des de Can Poch">
                     <input type="hidden" name="_next" value="thank-you.html">
                     <input type="hidden" name="_language" value="ca">
-                    
+
                     <button type="submit" class="btn-primary" data-ca="Enviar missatge" data-en="Send Message">Enviar missatge</button>
                 </form>
             </div>
